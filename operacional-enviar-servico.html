@@ -16,18 +16,18 @@
         <div class="buttonsArea">
             <a href="comercial.html"><div class="button">Comercial</div></a>
             <a href="operacional.html"><div class="button atv">Operacional</div></a>
-            <a href="tecnico.html"><div class="button">TÈcnico</div></a>
+            <a href="tecnico.html"><div class="button">T√©cnico</div></a>
             <a href="./todos/index.html"><div class="button">Todos</div></a>
         </div>
     </header>
 
     <div class="container">
-	<h2>¡rea Operacional: Como enviar um serviÁo</h2>
+	<h2>√Årea Operacional: Como enviar um servi√ßo</h2>
 	<div class="botaoArea">
-	    <a href="operacional-editar-servico.html"><div class="botao">Realizar ServiÁo</div></a>
+	    <a href="operacional-editar-servico.html"><div class="botao">Realizar Servi√ßo</div></a>
 	    <a href="operacional-enviar-servico.html"><div class="botao atv">Enviar Proposta</div></a>
-	    <a href="operacional-agendar-servico.html"><div class="botao">Agendar ServiÁo</div></a>
-	    <a href="operacional-servico-expirado.html"><div class="botao">ServiÁos Expirados</div></a>
+	    <a href="operacional-agendar-servico.html"><div class="botao">Agendar Servi√ßo</div></a>
+	    <a href="operacional-servico-expirado.html"><div class="botao">Servi√ßos Expirados</div></a>
 	    <a href="operacional-nova-ordem.html"><div class="botao">Nova Ordem de Serv.</div></a>
 	</div>
 
@@ -44,7 +44,7 @@
 		<img class="eachImg" src="./imagens/operacional-enviar-proposta/3aceitarProposta.png">
 	</div>
 	<div class="eachItem">
-		<div class="desc">Clique em AceitaÁ„o Proposta.</div>
+		<div class="desc">Clique em Aceita√ß√£o Proposta.</div>
 		<img class="eachImg" src="./imagens/operacional-enviar-proposta/4aceitacaoProposta.png">
 	</div>
 	<div class="eachItem">
@@ -52,11 +52,11 @@
 		<img class="eachImg" src="./imagens/operacional-enviar-proposta/5agendarServicos.png">
 	</div>
 	<div class="eachItem">
-		<div class="desc">V· para a are· de "InformaÁ„o sobre o serviÁo". Clique para selecionar os produtos.</div>
+		<div class="desc">V√° para a are√° de "Informa√ß√£o sobre o servi√ßo". Clique para selecionar os produtos.</div>
 		<img class="eachImg" src="./imagens/operacional-enviar-proposta/6selecionarProdutos.png">
 	</div>
 	<div class="eachItem">
-		<div class="desc">V· para a are· de Cronograma de ServiÁo.</div>
+		<div class="desc">V√° para a are√° de Cronograma de Servi√ßo.</div>
 		<img class="eachImg" src="./imagens/operacional-enviar-proposta/7cronogramaServico.png">
 	</div>
 	<div class="eachItem">
@@ -76,23 +76,23 @@
 		<img class="eachImg" src="./imagens/operacional-enviar-proposta/12addTudo.png">
 	</div>
 	<div class="eachItem">
-		<div class="desc">Agendar ServiÁo.</div>
+		<div class="desc">Agendar Servi√ßo.</div>
 		<img class="eachImg" src="./imagens/operacional-enviar-proposta/12.5Agendar.png">
 	</div>
 	<div class="eachItem">
-		<div class="desc">Ordens de ServiÁo.</div>
+		<div class="desc">Ordens de Servi√ßo.</div>
 		<img class="eachImg" src="./imagens/operacional-enviar-proposta/11ordensServico.png">
 	</div>
 	<div class="eachItem">
-		<div class="desc">Preencher o que for necess·rio.</div>
+		<div class="desc">Preencher o que for necess√°rio.</div>
 		<img class="eachImg" src="./imagens/operacional-enviar-proposta/13preencherOR.png">
 	</div>
 	<div class="eachItem">
-		<div class="desc">Acessar Ordem de ServiÁo.</div>
+		<div class="desc">Acessar Ordem de Servi√ßo.</div>
 		<img class="eachImg" src="./imagens/operacional-enviar-proposta/14OR.png">
 	</div>
 	<div class="eachItem">
-		<div class="desc">Imprimir Ordem de ServiÁo.</div>
+		<div class="desc">Imprimir Ordem de Servi√ßo.</div>
 		<img class="eachImg" src="./imagens/operacional-enviar-proposta/15imprimir.png">
 	</div>
 
@@ -221,6 +221,14 @@
 @media screen and (max-width: 500px) {
 	.main {
 		background-color: red;
+		min-height: 100vh;
+	}
+	.container {
+		width: 95%;
+		font-size: 12.5px;
+		display: flex;
+		text-align: center;
+		justify-content: center;
 	}
 	.header {
 		flex-wrap: wrap;
@@ -240,6 +248,18 @@
 	.buttonsArea .button {
 		width: 100%;
 	}
+	.botaoArea {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.eachImg {
+		height: inherit;
+		width: 97%;
+		margin-bottom: 10px;
+	}
+    .eachItem {
+	min-height: 200px;
+    }
 }
 </style>
 
