@@ -16,23 +16,23 @@
         <div class="buttonsArea">
             <a href="comercial.html"><div class="button">Comercial</div></a>
             <a href="operacional.html"><div class="button atv">Operacional</div></a>
-            <a href="tecnico.html"><div class="button">TÈcnico</div></a>
+            <a href="tecnico.html"><div class="button">T√©cnico</div></a>
             <a href="./todos/index.html"><div class="button">Todos</div></a>
         </div>
     </header>
 
     <div class="container">
-	<h2>¡rea Operacional: Como agendar um serviÁo</h2>
+	<h2>√Årea Operacional: Como agendar um servi√ßo</h2>
 	<div class="botaoArea">
-	    <a href="operacional-editar-servico.html"><div class="botao">Realizar ServiÁo</div>
+	    <a href="operacional-editar-servico.html"><div class="botao">Realizar Servi√ßo</div>
 	    <a href="operacional-enviar-servico.html"><div class="botao">Enviar Proposta</div>
-	    <a href="operacional-agendar-servico.html"><div class="botao atv">Agendar ServiÁo</div></a>
-	    <a href="operacional-servico-expirado.html"><div class="botao">ServiÁos Expirados</div></a>
+	    <a href="operacional-agendar-servico.html"><div class="botao atv">Agendar Servi√ßo</div></a>
+	    <a href="operacional-servico-expirado.html"><div class="botao">Servi√ßos Expirados</div></a>
 	    <a href="operacional-nova-ordem.html"><div class="botao">Nova Ordem de Serv.</div></a>
 	</div>
 
 	<div class="eachItem">
-		<div class="desc">Passe o mouse em Vendas e clique em ServiÁos</div>
+		<div class="desc">Passe o mouse em Vendas e clique em Servi√ßos</div>
 		<img class="eachImg" src="./imagens/operaciona-editar-servico/2vendasServicos.png">
 	</div>
 	<div class="eachItem">
@@ -164,6 +164,14 @@
 @media screen and (max-width: 500px) {
 	.main {
 		background-color: red;
+		min-height: 100vh;
+	}
+	.container {
+		width: 95%;
+		font-size: 12.5px;
+		display: flex;
+		text-align: center;
+		justify-content: center;
 	}
 	.header {
 		flex-wrap: wrap;
@@ -183,6 +191,18 @@
 	.buttonsArea .button {
 		width: 100%;
 	}
+	.botaoArea {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.eachImg {
+		height: inherit;
+		width: 97%;
+		margin-bottom: 10px;
+	}
+    .eachItem {
+	min-height: 200px;
+    }
 }
 </style>
 
