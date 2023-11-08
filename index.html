@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNI tutorial</title>
+</head>
+
+<body class="main">
+
+    <header class="header">
+        <div class="logo">
+            <img class="img" src="https://site.trulynoleninternational.com/wp-content/uploads/2021/01/TNI-Logo-e1619771443738.png" alt="">
+        </div>
+        <div class="buttonsArea">
+            <a href="comercial.html"><div class="button">Comercial</div></a>
+            <a href="operacional.html"><div class="button">Operacional</div></a>
+            <a href="tecnico.html"><div class="button">Técnico</div></a>
+            <a href="./todos/index.html"><div class="button">Todos</div></a>
+        </div>
+    </header>
+
+    <div class="container">
+	* Clique em uma das áreas no cabeçalho
+    </div>
+
+</body>
+<style>
+    .main {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        width: 100vw;
+        background: linear-gradient(white, grey);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    .header {
+        top: 0;
+        height: 80px;
+        width: 100vw;
+        position: absolute;
+        background-color: white;
+        box-shadow: 1px 1px 5px black;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo {
+	height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo .img {
+	height: 95%;
+    }
+
+    .buttonsArea {
+        display: flex;
+    }
+
+    .buttonsArea .button {
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+        width: 150px;
+        cursor: pointer;
+        transition: .1s all ease-in-out;
+    }
+
+    .button:hover {
+        background-color: antiquewhite;
+    }
+
+    .container {
+        width: 80vw;
+        min-height: 80vh;
+        margin-top: 100px;
+    }
+
+    a {
+	text-decoration: none;
+	color: black;
+    }
+</style>
+
+</html>
