@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TNI - Operacional - Iniciar Serviço</title>
+    <title>TNI - Operacional - Iniciar ServiÃ§o</title>
 </head>
 
 <body class="main">
@@ -16,45 +16,45 @@
         <div class="buttonsArea">
             <a href="comercial.html"><div class="button">Comercial</div></a>
             <a href="operacional.html"><div class="button atv">Operacional</div></a>
-            <a href="tecnico.html"><div class="button">Técnico</div></a>
+            <a href="tecnico.html"><div class="button">TÃ©cnico</div></a>
             <a href="./todos/index.html"><div class="button">Todos</div></a>
         </div>
     </header>
 
     <div class="container">
-	<h2>Área Operacional: Como iniciar um serviço</h2>
+	<h2>Ãrea Operacional: Como iniciar um serviÃ§o</h2>
 	<div class="botaoArea">
-	    <a href="operacional-editar-servico.html"><div class="botao atv">Iniciar Serviço</div>
+	    <a href="operacional-editar-servico.html"><div class="botao atv">Iniciar ServiÃ§o</div>
 	    <a href="operacional-enviar-servico.html"><div class="botao">Enviar Proposta</div>
-	    <a href="operacional-agendar-servico.html"><div class="botao">Agendar Serviço</div></a>
-	    <a href="operacional-servico-expirado.html"><div class="botao">Serviços Expirados</div></a>
+	    <a href="operacional-agendar-servico.html"><div class="botao">Agendar ServiÃ§o</div></a>
+	    <a href="operacional-servico-expirado.html"><div class="botao">ServiÃ§os Expirados</div></a>
 	    <a href="operacional-nova-ordem.html"><div class="botao">Nova Ordem de Serv.</div></a>
 	</div>
 
 	<div class="eachItem">
-		<div class="desc">Faça Login no TNI</div>
+		<div class="desc">FaÃ§a Login no TNI</div>
 		<a class="aLinkTNI" href="https://www.trulynoleninternational.com/proposals/tg/index.asp
 " target="_blank">https://www.trulynoleninternational.com/proposals/tg/index.asp</a>
 		<img class="eachImg" src="./imagens/operaciona-editar-servico/1loginTNI.png">
 	</div>
 	<div class="eachItem">
-		<div class="desc">Passe o mouse em Vendas e clique em Serviços</div>
+		<div class="desc">Passe o mouse em Vendas e clique em ServiÃ§os</div>
 		<img class="eachImg" src="./imagens/operaciona-editar-servico/2vendasServicos.png">
 	</div>
 	<div class="eachItem">
-		<div class="desc">Procurar Serviço pelo ID</div>
+		<div class="desc">Procurar ServiÃ§o pelo ID</div>
 		<img class="eachImg" src="./imagens/operaciona-editar-servico/3editarServico.png">
 	</div>
 	<div class="eachItem">
-		<div class="desc">Vai estar como "Realizar Inspeção" clique no lapis de editar</div>
+		<div class="desc">Vai estar como "Realizar InspeÃ§Ã£o" clique no lapis de editar</div>
 		<img class="eachImg" src="./imagens/operaciona-editar-servico/4realizarInspecao.png">
 	</div>
 	<div class="eachItem">
-		<div class="desc">Coloque a data da Inspeção, preencha o contato, e clique em SALVAR</div>
+		<div class="desc">Coloque a data da InspeÃ§Ã£o, preencha o contato, e clique em SALVAR</div>
 		<img class="eachImg" src="./imagens/operaciona-editar-servico/5dataInspecao.png">
 	</div>
 	<div class="eachItem">
-		<div class="desc">Agora é a fase de preparar a prosposta. Clique em editar.</div>
+		<div class="desc">Agora Ã© a fase de preparar a prosposta. Clique em editar.</div>
 		<img class="eachImg" src="./imagens/operaciona-editar-servico/6prepararProposta.png">
 	</div>
 	<div class="eachItem">
@@ -70,7 +70,7 @@
 		<img class="eachImg" src="./imagens/operaciona-editar-servico/9preencherProposta.png">
 	</div>
 	<div class="eachItem">
-		<div class="desc">Após preencher clique em: Salvar.</div>
+		<div class="desc">ApÃ³s preencher clique em: Salvar.</div>
 		<img class="eachImg" src="./imagens/operaciona-editar-servico/10salvar.png">
 	</div>
     </div>
@@ -198,6 +198,14 @@
 @media screen and (max-width: 500px) {
 	.main {
 		background-color: red;
+		min-height: 100vh;
+	}
+	.container {
+		width: 95%;
+		font-size: 12.5px;
+		display: flex;
+		text-align: center;
+		justify-content: center;
 	}
 	.header {
 		flex-wrap: wrap;
@@ -217,6 +225,18 @@
 	.buttonsArea .button {
 		width: 100%;
 	}
+	.botaoArea {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.eachImg {
+		height: inherit;
+		width: 97%;
+		margin-bottom: 10px;
+	}
+    .eachItem {
+	min-height: 200px;
+    }
 }
 </style>
 
