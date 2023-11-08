@@ -14,7 +14,7 @@
             <img class="img" src="https://site.trulynoleninternational.com/wp-content/uploads/2021/01/TNI-Logo-e1619771443738.png" alt="">
         </div></a>
         <div class="buttonsArea">
-            <a href="comercial.html"><div class="button">Comercial</div></a>
+            <a href="comercial.html"><div class="button atv">Comercial</div></a>
             <a href="operacional.html"><div class="button">Operacional</div></a>
             <a href="tecnico.html"><div class="button">Técnico</div></a>
             <a href="./todos/index.html"><div class="button">Todos</div></a>
@@ -147,7 +147,7 @@
     }
     .eachItem {
 	border-top: 1px solid grey;
-	height: 470px;
+	min-height: 200px;
 	width: 100%;
         display: flex;
         justify-content: center;
@@ -161,6 +161,49 @@
     .atv {
     	background-color: red;
     }
+@media screen and (max-width: 500px) {
+	.main {
+		background-color: red;
+		min-height: 100vh;
+	}
+	.container {
+		width: 95%;
+		font-size: 12.5px;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+	}
+	.header {
+		flex-wrap: wrap;
+		height: 100px;
+		width: 100vw;
+	}
+	.header .logo {
+		height: 50%;
+		margin-top: 4px;
+	}
+	.buttonsArea {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		margin-top: -45px;
+	}
+	.buttonsArea .button {
+		width: 100%;
+	}
+	.botaoArea {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.eachImg {
+		height: inherit;
+		width: 97%;
+		margin-bottom: 10px;
+	}
+    .eachItem {
+	min-height: 200px;
+    }
+}
 </style>
 
 </html>
