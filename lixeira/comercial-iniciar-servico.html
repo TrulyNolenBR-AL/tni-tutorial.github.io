@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNI - Comercial - Cadastrar Cliente</title>
+</head>
+
+<body class="main">
+
+    <header class="header">
+        <a class="aLink" href="index.html">
+            <div class="logo">
+                <img class="img"
+                    src="https://site.trulynoleninternational.com/wp-content/uploads/2021/01/TNI-Logo-e1619771443738.png"
+                    alt="">
+            </div>
+        </a>
+        <div class="buttonsArea">
+            <a href="comercial.html">
+                <div class="button atv">Comercial</div>
+            </a>
+            <a href="operacional.html">
+                <div class="button">Operacional</div>
+            </a>
+            <a href="tecnico.html">
+                <div class="button">T�cnico</div>
+            </a>
+            <a href="./todos/index.html">
+                <div class="button">Todos</div>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>�rea Comercial: Iniciar um Novo Servi�o</h2>
+        <div class="botaoArea">
+            <a href="comercial-pag-inicial.html">
+                <div class="botao">P�gina Inicial</div>
+            </a>
+            <a href="comercial-cadastrar-cliente.html">
+                <div class="botao">Cadastrar Cliente</div>
+                <a href="comercial-iniciar-servico.html">
+                    <div class="botao atv">Iniciar Servi�o</div>
+                </a>
+        </div>
+
+        <div class="eachItem">
+            <div class="desc">Passe o mouse em Vendas e clique em Clientes</div>
+            <img class="eachImg" src="./imagens/comercial-cadastrar-cliente/1cadastrarCliente.png">
+        </div>
+        <div class="eachItem">
+            <div class="desc">Clique no cliente que far� o servi�o</div>
+            <img class="eachImg" src="./imagens/comercial-iniciar-venda/1clicarCliente.png">
+        </div>
+        <div class="eachItem">
+            <div class="desc">Clique em Nova Venda</div>
+            <img class="eachImg" src="./imagens/comercial-iniciar-venda/2novaVenda.png">
+        </div>
+        <div class="eachItem">
+            <div class="desc">Clique em OK</div>
+            <img class="eachImg" src="./imagens/comercial-iniciar-venda/3ok.png">
+        </div>
+        <div class="eachItem">
+            <div class="desc">Preencha os campos com as informa��es necess�rias e clique em SALVAR</div>
+            <img class="eachImg" src="./imagens/comercial-iniciar-venda/4preencherVenda.png">
+        </div>
+        <div class="eachItem">
+            <div class="desc">Registre no papel de registro "Cod. Proposta" o ID do servi�o</div>
+            <img class="eachImg" src="./imagens/comercial-iniciar-venda/5registrarID.png">
+        </div>
+    </div>
+
+</body>
+<style>
+    .main {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        width: 100vw;
+        background: linear-gradient(white, grey);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    .header {
+        top: 0;
+        height: 80px;
+        width: 100vw;
+        position: absolute;
+        background-color: white;
+        box-shadow: 1px 1px 5px black;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo .img {
+        height: 95%;
+    }
+
+    .buttonsArea {
+        display: flex;
+    }
+
+    .buttonsArea .button {
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+        width: 150px;
+        cursor: pointer;
+        transition: .1s all ease-in-out;
+    }
+
+    .button:hover {
+        background-color: antiquewhite;
+    }
+
+    .container {
+        width: 80vw;
+        min-height: 80vh;
+        margin-top: 100px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .botaoArea {
+        display: flex;
+    }
+
+    .botao {
+        height: 30px;
+        width: 150px;
+        background-color: silver;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 1px 1px 5px black;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .botao:hover {
+        background-color: red;
+    }
+
+    .aLink {
+        height: 100%;
+    }
+
+    .eachImg {
+        height: 400px;
+    }
+
+    .eachItem {
+        border-top: 1px solid grey;
+        height: 470px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .desc {
+        margin: 20px;
+        text-shadow: 1px 1px 5px white;
+    }
+
+    .atv {
+        background-color: red;
+    }
+
+    @media screen and (max-width: 500px) {
+        .main {
+            background-color: red;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 95%;
+            font-size: 12.5px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .header {
+            flex-wrap: wrap;
+            height: 100px;
+            width: 100vw;
+        }
+
+        .header .logo {
+            height: 50%;
+            margin-top: 4px;
+        }
+
+        .buttonsArea {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-top: -45px;
+        }
+
+        .buttonsArea .button {
+            width: 100%;
+        }
+
+        .botaoArea {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .eachImg {
+            height: null;
+            width: 97%;
+            margin-bottom: 10px;
+        }
+
+        .eachItem {
+            min-height: 200px;
+        }
+    }
+</style>
+
+</html>

@@ -4,13 +4,13 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TNI - Todos</title>
+    <title>TNI - Comercial - Cadastrar Cliente</title>
 </head>
 
 <script>
 
     function myfunction(n) {
-        for (let i = 1; i <= 1; i++) {
+        for (let i = 1; i <= 3; i++) {
             document.querySelector(`.botao${i}`).classList.remove('atv');
             document.querySelector(`.pagInicial${i}`).classList.add('dpNon');
         }
@@ -31,8 +31,8 @@
             </div>
         </a>
         <div class="buttonsArea">
-            <a href="../comercial/comercial-tutorial.html">
-                <div class="button">Comercial</div>
+            <a href="./comercial-tutorial.html">
+                <div class="button atv">Comercial</div>
             </a>
             <a href="../operacional/operacional-tutorial.html">
                 <div class="button">Operacional</div>
@@ -40,104 +40,87 @@
             <a href="../tecnico/tecnico-tutorial.html">
                 <div class="button">Técnico</div>
             </a>
-            <a href="index.html">
-                <div class="button atv">Todos</div>
+            <a href="../todos/index.html">
+                <div class="button">Todos</div>
             </a>
         </div>
     </header>
 
     <div class="container">
-        <h2>Tutorial para todos os funcionarios</h2>
+        <h2>Tutorial TNI Área Comercial</h2>
         <div class="botaoArea">
-            <div class="botao botao1 atv" onClick="myfunction(1)">Calendario</div>
-            <div class="botao botao2" onClick="myfunction(2)">Seções Área Inicial</div>
+            <div class="botao botao1 atv" onClick="myfunction(1)">Página Inicial</div>
+            <div class="botao botao2" onClick="myfunction(2)">Cadastrar Cliente</div>
+            <div class="botao botao3" onClick="myfunction(3)">Iniciar Serviço</div>
+
         </div>
 
         <div class="pagInicial pagInicial1">
-            <h2>Como usar o Calendario</h2>
+            <h2>Página inicial do TNI</h2>
 
             <div class="eachItem">
-                <p class="p">Esta seção lhe permitirá ver o que está agendado para esse mes. Todas as
-                    atividades e compromissos aparecerão aqui. Se o dia estiver em:
-                <div class="red">VERMELHO</div>significa que há algo agendado para a data.
-                Se o dia estiver em: <div class="black">PRETO</div> significa que não há nada agendado para essa data.
-                </p>
-                <img class="eachImg" src="../imagens/comercial-home/calendario.png">
-            </div>
-            <div class="eachItem">
-                <p class="p">Para adicionar atividades ao calend�rio, clique em "Editar Calend�rio" e aparecer� a
-                    seguinte
-                    tela:</p>
-                <img class="eachImg" src="../imagens/comercial-home/calendario2.png">
-                <p class="p">Clique no + para adicionar eventos no calendario.</p>
-            </div>
-            <div class="eachItem">
-                <p class="p">Preencha as seguintes informações</p>
-                <img class="eachImg" src="../imagens/comercial-home/calendario3.png">
-            </div>
-            <div class="eachItem">
-                <p class="p">Cada informação em detalhe</p>
-                <img class="eachImg" src="../imagens/comercial-home/calendario4.png">
-            </div>
-            <div class="eachItem">
-                <p class="p">Complete toda as informações e clique em "Salvar". A tarefa aparecerá da seguinte forma no
-                    calendário:</p>
-                <img class="eachImg" src="../imagens/comercial-home/calendario5.png">
-                <img class="eachImg" src="../imagens/comercial-home/calendario6.png">
+                <div class="desc">A página de inicio do Sistema de Gestão TNI mostrará um relatório
+                    sobre a Analise de Metas de Contratos. Estas metas são apenas para serviços periódicos e não são
+                    aplicadas para serviços avulsos. Será mostrado apenas as vendas desse mês.
+                </div>
+                <img class="eachImg" src="../imagens/comercial-home/1.png">
             </div>
         </div>
 
-		<div class="pagInicial pagInicial2 dpNon">
-			<h2>Como criar um relatório de Supervisão</h2>
+        <div class="pagInicial pagInicial2 dpNon">
+            <h2>Como Cadastrar um Cliente no TNI</h2>
 
-			<div class="eachItem">
-				<div class="desc">Seções da Página Inicial</div>
-				<img class="eachImg" src="../imagens/tecnico-ordem-digital/1home.png">
-				<h3>Tarefas para Hoje</h3>
-				<p class="p">Esta seção mostrará todas as atividades que estão agendadas para este dia.
-					Estas atividades se atualizarão à meia-noite da data correspondente.</p>
-				<h3>Tarefas Pendentes</h3>
-				<p class="p">Esta seção enumerará todas as atividades passadas (de dias anteriores) que
-					não foram completadas.</p>
-				<h3>Serviços sem Programação</h3>
-				<p class="p">Esta seção mostrará uma lista de todas as contas (ID de Serviço) que têm
-					serviços, mas que ainda não foram agendadas. (Visto pelo Franqueado,
-					Administrador, Pessoal de Vendas e Gerentes).</p>
-				<h3>Serviços que Expiram</h3>
-				<p class="p">Esta seção enumerará todas as contas (ID de Serviço) cujos contratos
-					terminarão em 30 dias ou menos.</p>
-				<h3>Calendário</h3>
-				<p class="p">Esta seção lhe permitirá ver o que está agendado para esse mes. Todas as
-					atividades e compromissos aparecerão aqui. Se o dia estiver em:
-				<div class="red">VERMELHO</div>significa que há algo agendado para a data.
-				Se o dia estiver em: <div class="black">PRETO</div> significa que não há nada agendado para essa data.
-				</p>
-				<h3>Gerar Relatório Diario </h3>
-				<p class="p">Esta seção lhe permitirá ver um relatório das atividades de ontem, de hoje e
-					de amanhã (enumeradas na sequência) para os funcionários selecionados.
-				<ul>
+            <div class="eachItem">
+                <div class="desc">Passe o mouse em Vendas e clique em Clientes</div>
+                <img class="eachImg" src="../imagens/comercial-cadastrar-cliente/1cadastrarCliente.png">
+            </div>
+            <div class="eachItem">
+                <div class="desc">Clique em Novo Cliente</div>
+                <img class="eachImg" src="../imagens/comercial-cadastrar-cliente/2novoCliente.png">
+            </div>
+            <div class="eachItem">
+                <div class="desc">Preencha os dados do cliente depois clique em SALVAR</div>
+                <img class="eachImg" src="../imagens/comercial-cadastrar-cliente/3preencherCliente.png">
+            </div>
+            <div class="eachItem">
+                <div class="desc">Adicionar Contato</div>
+                <img class="eachImg" src="../imagens/comercial-cadastrar-cliente/4novoContato.png">
+            </div>
+            <div class="eachItem">
+                <div class="desc">Preencher contato</div>
+                <img class="eachImg" src="../imagens/comercial-cadastrar-cliente/5preencherContato.png">
+            </div>
+        </div>
 
-					<li> Tarefas</li>
-					<li> Propostas com Aceitação Pendente</li>
-					<li> Propostas entregues ontem, hoje, e a serem entregues amanhã.</li>
-				</ul>
-				</p>
-				<h3>Ícone de Telefone</h3>
-				<p class="p">Este ícone lhe enviará à Clientes Temp (Temporários). Aqui se pode
-					completar a informação sobre um contato que poderia ser um cliente
-					potencial, mas que não temos muita informação para continuar.</p>
-				<h3>Icone de Carro</h3>
-				<p class="p">Informação de Varrido relacionado aos Clientes Temp (Temporários).</p>
-				<h3>Icone de Envelope</h3>
-				<p class="p">Mensagens automáticas geradas pelo sistema com relação aos Clientes
-					Temp (Temporários).</p>
-			</div>
-			<div class="eachItem">
-				<div class="desc">Rascunho</div>
-				<img class="eachImg" src="../imagens/tecnico-ordem-digital/1.png">
-			</div>
-		</div>
-    </div>
+        <div class="pagInicial pagInicial3 dpNon">
+            <h2>Como iniciar um Serviço no TNI</h2>
+
+
+            <div class="eachItem">
+                <div class="desc">Passe o mouse em Vendas e clique em Clientes</div>
+                <img class="eachImg" src="../imagens/comercial-cadastrar-cliente/1cadastrarCliente.png">
+            </div>
+            <div class="eachItem">
+                <div class="desc">Clique no cliente que far� o servi�o</div>
+                <img class="eachImg" src="../imagens/comercial-iniciar-venda/1clicarCliente.png">
+            </div>
+            <div class="eachItem">
+                <div class="desc">Clique em Nova Venda</div>
+                <img class="eachImg" src="../imagens/comercial-iniciar-venda/2novaVenda.png">
+            </div>
+            <div class="eachItem">
+                <div class="desc">Clique em OK</div>
+                <img class="eachImg" src="../imagens/comercial-iniciar-venda/3ok.png">
+            </div>
+            <div class="eachItem">
+                <div class="desc">Preencha os campos com as informa��es necess�rias e clique em SALVAR</div>
+                <img class="eachImg" src="../imagens/comercial-iniciar-venda/4preencherVenda.png">
+            </div>
+            <div class="eachItem">
+                <div class="desc">Registre no papel de registro "Cod. Proposta" o ID do servi�o</div>
+                <img class="eachImg" src="../imagens/comercial-iniciar-venda/5registrarID.png">
+            </div>
+        </div>
 
 </body>
 <style>
@@ -221,14 +204,15 @@
     .botao {
         height: 30px;
         width: 150px;
-        background-color: silver;
         margin: 5px;
         display: flex;
         justify-content: center;
+        background-color: rgb(192, 192, 192);
         align-items: center;
         box-shadow: 1px 1px 5px black;
         border-radius: 4px;
         cursor: pointer;
+        transition: .1s all ease-in-out;
     }
 
     .botao:hover {
@@ -239,6 +223,10 @@
         height: 100%;
     }
 
+    .eachImg {
+        height: 400px;
+    }
+
     .eachItem {
         border-top: 1px solid grey;
         min-height: 470px;
@@ -247,17 +235,21 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-bottom: 10px;
     }
 
-    .red {
-        color: red;
-        font-weight: bold;
+    .desc {
+        margin: 20px;
+        text-shadow: 1px 1px 5px white;
     }
-    .black {
-        font-weight: bold;
-    }
+
     .atv {
         background-color: rgb(252, 91, 91);
+        border-radius: 5px;
+        transition: .1s all ease-in-out;
+    }
+    .atv:hover {
+        background-color: red;
     }
 
     .dpNon {
@@ -303,6 +295,16 @@
         .botaoArea {
             flex-wrap: wrap;
             justify-content: center;
+        }
+
+        .eachImg {
+            height: inherit;
+            width: 97%;
+            margin-bottom: 10px;
+        }
+
+        .eachItem {
+            min-height: 200px;
         }
     }
 </style>
