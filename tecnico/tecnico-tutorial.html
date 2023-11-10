@@ -10,7 +10,7 @@
 <script>
 
 	function myfunction(n) {
-		for (let i = 1; i <= 5; i++) {
+		for (let i = 1; i <= 4; i++) {
 			document.querySelector(`.botao${i}`).classList.remove('atv');
 			document.querySelector(`.pagInicial${i}`).classList.add('dpNon');
 		}
@@ -53,7 +53,6 @@
 			<div class="botao botao2" onClick="myfunction(2)">Ver Produtos</div>
 			<div class="botao botao3" onClick="myfunction(3)">Relatorio Supervisão</div>
 			<div class="botao botao4" onClick="myfunction(4)">Abrir Reclamação</div>
-			<div class="botao botao5" onClick="myfunction(5)">Relatorio Supervisão</div>
 		</div>
 
 		<div class="pagInicial pagInicial1">
@@ -306,15 +305,6 @@
 			<div class="eachItem">
 				<div class="desc">Clique em SALVAR</div>
 				<img class="eachImg" src="./abrirReclamacao/4.png">
-			</div>
-		</div>
-
-		<div class="pagInicial pagInicial5 dpNon">
-			<h2>Como criar um relatório de Supervisão</h2>
-
-			<div class="eachItem">
-				<div class="desc">Rascunho APP</div>
-				<img class="eachImg" src="../imagens/tecnico-ordem-digital/1.png">
 			</div>
 		</div>
 

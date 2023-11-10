@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TNI - Comercial</title>
 </head>
@@ -10,7 +10,7 @@
 <script>
 
     function myfunction(n) {
-        for (let i = 1; i <= 4; i++) {
+        for (let i = 1; i <= 3; i++) {
             document.querySelector(`.botao${i}`).classList.remove('atv');
             document.querySelector(`.pagInicial${i}`).classList.add('dpNon');
         }
@@ -49,27 +49,15 @@
     <div class="container">
         <h2>Tutorial TNI: Área Comercial</h2>
         <div class="botaoArea">
-            <div class="botao botao1 atv" onClick="myfunction(1)">Página Inicial</div>
-            <div class="botao botao2" onClick="myfunction(2)">Cadastrar Cliente</div>
-            <div class="botao botao3" onClick="myfunction(3)">Iniciar Serviço</div>
+            <div class="botao botao1" onClick="myfunction(1)">Cadastrar Cliente</div>
+            <div class="botao botao2" onClick="myfunction(2)">Iniciar Serviço</div>
             <div class="line"></div>
-            <div class="botao botao4" onClick="myfunction(4)">Add Cliente Temp.</div>
+            <div class="botao botao3" onClick="myfunction(3)">Add Cliente Temp.</div>
 
         </div>
+
 
         <div class="pagInicial pagInicial1">
-            <h2>Página inicial do TNI</h2>
-
-            <div class="eachItem">
-                <div class="desc">A página de inicio do Sistema de Gestão TNI mostrará um relatório
-                    sobre a Analise de Metas de Contratos. Estas metas são apenas para serviços periódicos e não são
-                    aplicadas para serviços avulsos. Será mostrado apenas as vendas desse mês.
-                </div>
-                <img class="eachImg" src="../imagens/comercial-home/1.png">
-            </div>
-        </div>
-
-        <div class="pagInicial pagInicial2 dpNon">
             <h2>Como Cadastrar um Cliente no TNI</h2>
 
             <div class="eachItem">
@@ -94,7 +82,7 @@
             </div>
         </div>
 
-        <div class="pagInicial pagInicial3 dpNon">
+        <div class="pagInicial pagInicial2 dpNon">
             <h2>Como iniciar um Serviço no TNI</h2>
 
 
@@ -124,7 +112,7 @@
             </div>
         </div>
 
-        <div class="pagInicial pagInicial4 dpNon">
+        <div class="pagInicial pagInicial3 dpNon">
             <h2>Como Adicionar um cliente temporário</h2>
 
             <div class="eachItem">
