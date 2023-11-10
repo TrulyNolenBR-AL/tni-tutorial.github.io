@@ -4,13 +4,13 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TNI - Comercial - Cadastrar Cliente</title>
+    <title>TNI - Comercial</title>
 </head>
 
 <script>
 
     function myfunction(n) {
-        for (let i = 1; i <= 3; i++) {
+        for (let i = 1; i <= 4; i++) {
             document.querySelector(`.botao${i}`).classList.remove('atv');
             document.querySelector(`.pagInicial${i}`).classList.add('dpNon');
         }
@@ -47,11 +47,13 @@
     </header>
 
     <div class="container">
-        <h2>Tutorial TNI Área Comercial</h2>
+        <h2>Tutorial TNI: Área Comercial</h2>
         <div class="botaoArea">
             <div class="botao botao1 atv" onClick="myfunction(1)">Página Inicial</div>
             <div class="botao botao2" onClick="myfunction(2)">Cadastrar Cliente</div>
             <div class="botao botao3" onClick="myfunction(3)">Iniciar Serviço</div>
+            <div class="line"></div>
+            <div class="botao botao4" onClick="myfunction(4)">Add Cliente Temp.</div>
 
         </div>
 
@@ -122,6 +124,23 @@
             </div>
         </div>
 
+        <div class="pagInicial pagInicial4 dpNon">
+            <h2>Como Adicionar um cliente temporário</h2>
+
+            <div class="eachItem">
+                <div class="desc">Passe o mouse em Vendas e clique em Clientes</div>
+                <img class="eachImg" src="./addClienteTemp/1.png">
+            </div>
+            <div class="eachItem">
+                <div class="desc">Passe o mouse em Vendas e clique em Clientes</div>
+                <img class="eachImg" src="./addClienteTemp/2.png">
+            </div>
+            <div class="eachItem">
+                <div class="desc">Preencha e clique em SALVAR</div>
+                <img class="eachImg" src="./addClienteTemp/3.png">
+            </div>
+        </div>
+
 </body>
 <style>
     .main {
@@ -146,6 +165,14 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+    }
+
+    .line {
+        height: 20px;
+        width: 2px;
+        background-color: black;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     .logo {
@@ -199,6 +226,8 @@
 
     .botaoArea {
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .botao {

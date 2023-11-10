@@ -33,6 +33,30 @@
 
     <div class="container">
         * Clique em uma das áreas no cabeçalho
+        <hr>
+        
+        <div class="eachItem">
+            <div class="desc">Entre no TNI</div>
+            <a class="aLinkTNI" href="https://www.trulynoleninternational.com/proposals/tg/index.asp
+" target="_blank">https://www.trulynoleninternational.com/proposals/tg/index.asp</a>
+        </div>
+        <hr>
+        <h2>Download Apostilas</h2>
+        <div class="pdfs">
+            <div class="eachDown">
+                <div>Passo a passo do uso do TNI</div>
+                <button class="buttonPDF" type="submit" onclick="window.open('passoAPassoTNI.pdf')">
+                    <div>DOWNLOAD</div>
+                </button>
+            </div>
+            
+            <div class="eachDown">
+                <div>Como criar Relatório de Supervisão</div>
+                <button class="buttonPDF" type="submit" onclick="window.open('comoCriarRelatorioDeSupervisao.pdf')">
+                    <div>DOWNLOAD</div>
+                </button>
+            </div>
+        </div>
     </div>
 
 </body>
@@ -47,6 +71,46 @@
         justify-content: center;
         align-items: center;
         overflow-x: hidden;
+    }
+
+    .pdfs {
+        width: 80%;
+        min-height: 100px;
+        margin-top: 20px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .eachDown {
+        border: 1px solid rgb(150, 150, 150);
+        height: 70px;
+        width: 240px;
+        padding: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        margin: 3px;
+    }
+    .buttonPDF {
+        height: 30px;
+        width: 220px;
+        background: linear-gradient(rgb(5, 224, 5), rgb(17, 161, 17));
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 1px 1px 5px black;
+        cursor: pointer;
+        transition: .1s all ease-in-out;
+        font-weight: bold;
+        border: none;
+    }
+    .buttonPDF:hover {
+        background-color: rgb(156, 156, 156);
+        scale: 1.02;
     }
 
     .header {
@@ -97,7 +161,12 @@
         min-height: 80vh;
         margin-top: 100px;
     }
-
+    .aLinkTNI {
+        color: blue;
+    }
+    .aLinkTNI:hover {
+        color: orange;
+    }
     a {
         text-decoration: none;
         color: black;

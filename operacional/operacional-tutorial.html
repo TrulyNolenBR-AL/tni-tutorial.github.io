@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TNI - Comercial - Cadastrar Cliente</title>
 </head>
@@ -10,7 +10,7 @@
 <script>
 
     function myfunction(n) {
-        for (let i = 1; i <= 5; i++) {
+        for (let i = 1; i <= 6; i++) {
             document.querySelector(`.botao${i}`).classList.remove('atv');
             document.querySelector(`.pagInicial${i}`).classList.add('dpNon');
         }
@@ -47,13 +47,15 @@
     </header>
 
     <div class="container">
-        <h2>Área Operacional: Serviço expirado</h2>
+        <h2>Tutorial TNI: Área Operacional</h2>
         <div class="botaoArea">
             <div class="botao botao1 atv" onClick="myfunction(1)">Realizar Serviço</div>
             <div class="botao botao2" onClick="myfunction(2)">Enviar Proposta</div>
-            <div class="botao botao3" onClick="myfunction(3)">Agendar Serviço</div>
-            <div class="botao botao4" onClick="myfunction(4)">Serviços Expirados</div>
-            <div class="botao botao5" onClick="myfunction(5)">Nova Ordem de Serv.</div>
+            <div class="botao botao3" onClick="myfunction(3)">Baixa de Serviço</div>
+            <div class="line"></div>
+            <div class="botao botao4" onClick="myfunction(4)">Agendar Serviço</div>
+            <div class="botao botao5" onClick="myfunction(5)">Renovar Serviços</div>
+            <div class="botao botao6" onClick="myfunction(6)">Nova Ordem de Serv.</div>
         </div>
 
         <div class="pagInicial pagInicial1">
@@ -180,6 +182,35 @@
         </div>
 
         <div class="pagInicial pagInicial3 dpNon">
+            <h2>Como enviar uma proposta</h2>
+
+            <div class="eachItem">
+                <div class="desc">Passe o mouse em Vendas e clique em Serviços</div>
+                <img class="eachImg" src="../imagens/operaciona-editar-servico/2vendasServicos.png">
+            </div>
+            <div class="eachItem">
+                <div class="desc">Clique no cliente</div>
+                <img class="eachImg" src="./servicoFinalizado/2.png">
+            </div>
+            <div class="eachItem">
+                <div class="desc">Vá em ordem de serviço</div>
+                <img class="eachImg" src="./servicoFinalizado/3.png">
+            </div>
+            <div class="eachItem">
+                <div class="desc">Clique em realizada e hora da finalização</div>
+                <img class="eachImg" src="./servicoFinalizado/4.png">
+            </div>
+            <div class="eachItem">
+                <div class="desc">Adicionar produtos e o contato de serviço</div>
+                <img class="eachImg" src="./servicoFinalizado/5.png">
+            </div>
+            <div class="eachItem">
+                <div class="desc">Clique em SALVAR</div>
+                <img class="eachImg" src="./servicoFinalizado/6.png">
+            </div>
+        </div>
+
+        <div class="pagInicial pagInicial4 dpNon">
             <h2>Como agendar um serviço</h2>
 
             <div class="eachItem">
@@ -196,10 +227,26 @@
                 <div class="desc">Busque o cliente</div>
                 <img class="eachImg" src="../imagens/agendar-servico/1.png">
             </div>
+            <div class="eachItem">
+                <div class="desc">Clique no cliente</div>
+                <img class="eachImg" src="./agendarServico/4.png">
+            </div>
+            <div class="eachItem">
+                <div class="desc">Clique em Agendar Serviço</div>
+                <img class="eachImg" src="./agendarServico/5.png">
+            </div>
+            <div class="eachItem">
+                <div class="desc">Insira as informações do serviço</div>
+                <img class="eachImg" src="./agendarServico/5.5.png">
+            </div>
+            <div class="eachItem">
+                <div class="desc">Clique em Agendar Serviço</div>
+                <img class="eachImg" src="./agendarServico/6.png">
+            </div>
         </div>
 
-        <div class="pagInicial pagInicial4 dpNon">
-            <h2>Na página inicial do TNI</h2>
+        <div class="pagInicial pagInicial5 dpNon">
+            <h2>Renovar Serviço</h2>
 
             <div class="eachItem">
                 <div class="desc">Faça Login no TNI</div>
@@ -208,12 +255,24 @@
                 <img class="eachImg" src="../imagens/operaciona-editar-servico/1loginTNI.png">
             </div>
             <div class="eachItem">
-                <div class="desc">No Inicio na parte de baixo estão os serviços que expiram.</div>
+                <div class="desc">No Inicio na parte de baixo estão os serviços que expiram. Clique em um deles;</div>
                 <img class="eachImg" src="../imagens/operacional-servicos-expiram/1.png">
+            </div>
+            <div class="eachItem">
+                <div class="desc">Vá em mais... E clique em renovar serviço.</div>
+                <img class="eachImg" src="./renovarServico/1.png">
+            </div>
+            <div class="eachItem">
+                <div class="desc">Clique em OK.</div>
+                <img class="eachImg" src="./renovarServico/2.png">
+            </div>
+            <div class="eachItem">
+                <div class="desc">Preencha e clique em renovar serviço.</div>
+                <img class="eachImg" src="./renovarServico/3.png">
             </div>
         </div>
 
-        <div class="pagInicial pagInicial5 dpNon">
+        <div class="pagInicial pagInicial6 dpNon">
             <h2>Como emitir uma nova ordem de serviço:</h2>
 
             <div class="eachItem">
@@ -283,6 +342,15 @@
         display: flex;
     }
 
+    .line {
+        height: 20px;
+        width: 2px;
+        background-color: black;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+
     .buttonsArea .button {
         height: 40px;
         display: flex;
@@ -319,6 +387,8 @@
 
     .botaoArea {
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .botao {
